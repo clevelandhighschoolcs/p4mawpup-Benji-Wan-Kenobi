@@ -2,18 +2,10 @@
 
 To run this program:
 
-1)Open a vurtial enviroment.
+# 1) Download Python 2.7
 
-2)Put "webscrapper.py" into a Notepad++ file
+Go to: https://www.python.org/ftp/python/2.7.14/python-2.7.14.msi
 
-3)Type: "python webscrapper.py"
+# 2) Set Up a Virtual Machine
 
-4)Enjoy
-
-
-
-Code derived from:
-
-Mr.Walker,
-Hunter Key,
-My great mother,
+--To be continued--
