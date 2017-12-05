@@ -41,3 +41,5 @@ In your vitual machine, go to the folder where "webscraper.py" is located
 Run the command: "python webscraper.py"
 
 # ENJOY!!
+
+(Code derived from Me, Hunter Key, John Walker, My mother)
