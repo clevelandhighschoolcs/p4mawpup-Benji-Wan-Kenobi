@@ -14,7 +14,7 @@ Go to: "c:\Python27" in the command line
 
 Run the command: "Scripts\pip install virtualenv"
 
-Run the command: "c:\Python27\Scripts\vitualenv -p c:\Python27\python.exe .lpvenv"
+Run the command: "c:\Python27\Scripts\virtualenv.exe -p C:\Python27\python.exe .lpvenv"
 
 Run the command: ".lpvenv\Scripts\activate"
 
