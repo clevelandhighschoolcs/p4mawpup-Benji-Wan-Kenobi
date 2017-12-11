@@ -1,5 +1,11 @@
 import urllib2
 import time
+from twilio.rest import Client
+
+account_sid = 'ACa7889d2092ab17c8907d142adf8a915b'
+auth_token = 'b9ea03d04522dc1051bc991bf757494b'
+twilio_phone_number = '+14042387455'
+my_phone_number = "+16787932030"
 
 def WebData():
 	
@@ -22,7 +28,14 @@ def WebData():
 		
 		print("Testing...")
 		if lengthB != lengthA:
-			print ("The site has changed!")
+			body = "The site has changed!"
+			client = Client(account_sid, auth_token)
+			client.messages.create(
+				body=body,
+				to=my_phone_number,
+				from_=twilio_phone_number
+			)
+			print("Change detected, text sent")
 			break
 		else:
 			lengthA = lengthB
