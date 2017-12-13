@@ -12,17 +12,11 @@ Install
 
 Go to: "c:\Python27" in the command line
 
-Run the command:
+Run the command: "Scripts\pip install virtualenv"
 
-		Scripts\pip install virtualenv
+Run the command: "c:\Python27\Scripts\virtualenv.exe -p C:\Python27\python.exe .lpvenv"
 
-Run the command:
-
-	c:\Python27\Scripts\virtualenv.exe -p C:\Python27\python.exe .lpvenv
-
-Run the command: 
-
-	.lpvenv\Scripts\activate
+Run the command: ".lpvenv\Scripts\activate"
 
 You have created and are running your virtual machine! Save this for later...
 
@@ -44,9 +38,7 @@ Save as "webscraper.py"
 
 In your vitual machine, go to the folder where "webscraper.py" is located
 
-Run the command:
-
-	python webscraper.py
+Run the command: "python webscraper.py"
 
 # ENJOY!!
 
