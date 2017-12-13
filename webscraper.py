@@ -3,7 +3,7 @@ import time
 
 def WebData():
 	
-	link = raw_input ("Paste URL here:")
+	link = raw_input "Paste URL here:"
 	sec = int(raw_input("How many seconds do you want to test for?"))
 	
 	URL = urllib2.urlopen(link)
@@ -20,9 +20,9 @@ def WebData():
 		datastring = str(data)
 		lengthA = len(datastring)
 		
-		print("Testing...")
+		print "Testing..."
 		if lengthB != lengthA:
-			print("The site has changed!")
+			print "The site has changed!"
 			break
 		else:
 			lengthA = lengthB
@@ -30,6 +30,6 @@ def WebData():
 			time.sleep(1)
 			
 		if timeT == sec:
-			print ("No changes were made.")
+			print "No changes were made."
 	
 WebData()
