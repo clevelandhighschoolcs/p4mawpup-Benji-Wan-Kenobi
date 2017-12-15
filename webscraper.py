@@ -1,21 +1,15 @@
 import urllib2
 import time
-from twilio.rest import Client
-
-account_sid = 'XXX'
-auth_token = 'XXX'
-twilio_phone_number = '+XXX'
-my_phone_number = '+XXX'
 
 def WebData():
 	
-	link = raw_input("Paste URL here:")
+	link = raw_input "Paste URL here:"
 	sec = int(raw_input("How many seconds do you want to test for? If you would like to run until a change is detected enter 0."))
 	
 	URL = urllib2.urlopen(link)
 	data = URL.read()
 	datastring = str(data)
-	lengthB = len(datastring)
+	lengthA = len(datastring) # rename this to lengthA as in the algorithim it is first and is not consistent the alphabet sequentially 
 	
 	timeT = 0
 	
@@ -25,21 +19,14 @@ def WebData():
 			URL = urllib2.urlopen(link)
 			data = URL.read()
 			datastring = str(data)
-			lengthA = len(datastring)
+			lengthB = len(datastring) # change to lengthB
 		
 			print "Testing..."
-			if lengthB != lengthA:
+			if lengthA != lengthB:# respective A and B 
 				print "The site has changed!"
-				body = "The price has changed!"
-				client = Client(account_sid, auth_token)
-				client.messages.create(
-					body=body,
-					to=my_phone_number,
-					from_=twilio_phone_number
-				)
 				break
 			else:
-				lengthA = lengthB
+			 # this code is redundant, because length A does not equal lenght B  
 				timeT += 1
 				time.sleep(1)
 		
@@ -54,16 +41,9 @@ def WebData():
 			print "Testing..."
 			if lengthB != lengthA:
 				print "The site has changed!"
-				body = "The price has changed!"
-				client = Client(account_sid, auth_token)
-				client.messages.create(
-					body=body,
-					to=my_phone_number,
-					from_=twilio_phone_number
-				)
 				break
 			else:
-				lengthA = lengthB
+				 # same here redundancy 
 				timeT += 1
 				time.sleep(1)
 			
