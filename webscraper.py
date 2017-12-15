@@ -9,7 +9,7 @@ my_phone_number = '+XXX'
 
 def WebData():
 	
-	link = raw_input "Paste URL here:"
+	link = raw_input("Paste URL here:")
 	sec = int(raw_input("How many seconds do you want to test for? If you would like to run until a change is detected enter 0."))
 	
 	URL = urllib2.urlopen(link)
