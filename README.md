@@ -20,7 +20,7 @@ Run the command: ".lpvenv\Scripts\activate"
 
 You have created and are running your virtual machine! Save this for later...
 
-# 3) Save "webscraper.py" as a File With Notepad++
+# 3) Save "MaWPUP_webscraper.py" as a File With Notepad++
 
 Download Notepad++ from: https://notepad-plus-plus.org/repository/7.x/7.5.2/npp.7.5.2.Installer.exe
 
@@ -30,15 +30,15 @@ Open a new Notepad++ file
 
 Set language to Python
 
-Put "webscraper.py" into your new Notepad++ file
+Put "MaWPUP_webscraper.py" into your new Notepad++ file
 
-Save as "webscraper.py"
+Save as "MaWPUP_webscraper.py"
 
 # 4) Run the Program
 
-In your vitual machine, go to the folder where "webscraper.py" is located
+In your vitual machine, go to the folder where "MaWPUP_webscraper.py" is located
 
-Run the command: "python webscraper.py"
+Run the command: "python MaWPUP_webscraper.py"
 
 # ENJOY!!
 
